@@ -3,7 +3,7 @@ package me.whiteship.java8to11;
 import java.util.function.*;
 
 //자바8에서의 기존 클래스에서 람다식으로 변경 가능함을 학습.
-public class Foo {
+public class Foo01_Lambda_Basic_FI {
 
     public static void main(String[] args) {
 
@@ -37,7 +37,7 @@ public class Foo {
         System.out.println(plus10.andThen(multiply2).apply(10));
 
 
-        //Consumer - 자바에서 기본으로 제공해주는 함수형 인터페이스. 리턴값이 X
+        //Consumer - 자바에서 기본으로 제공해주는 함수형 인터페이스. 리턴값이 매겨변수로받은값을 무조건 리턴
         Consumer<Integer> printT = (i) -> System.out.println(i);
         printT.accept(10);
 
