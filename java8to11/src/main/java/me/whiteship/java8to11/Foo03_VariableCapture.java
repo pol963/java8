@@ -32,6 +32,7 @@ public class Foo03_VariableCapture {
         //IntConsumer 는 인트형으로 입력받은 값을 가져옴.
         IntConsumer printInt = (i) -> {
             System.out.println(i + baseNumber);
+
         };
 
         printInt.accept(10);
