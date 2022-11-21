@@ -21,7 +21,7 @@ class C implements I{
 }
 
 class AI{
-    public void method(I i){ //인터페이스를 상속받은 클래스만 들어올 수 있습니다. 
+    public void method(I i){ //인터페이스를 상속받은 클래스만 들어올 수 있습니다.
         i.method();
     }
 }
