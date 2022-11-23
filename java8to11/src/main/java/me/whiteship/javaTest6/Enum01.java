@@ -45,7 +45,7 @@ public class Enum01 {
         Direction[] dArr = Direction.values();
 
         for(Direction d : dArr)
-            System.out.printf("%s=%d%n", d.name(), d.ordinal());   
+            System.out.printf("%s=%d%n", d.name(), d.ordinal());
 
     }
 }
