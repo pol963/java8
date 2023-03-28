@@ -11,7 +11,7 @@ public class name_for {
                             System.out.println(i + " * " + j + " = " + i*j);
 
                     }
-            
+
         }
 
     }
