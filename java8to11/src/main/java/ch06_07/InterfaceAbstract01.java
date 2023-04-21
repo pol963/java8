@@ -20,7 +20,7 @@ class Fighter01 extends Unit02 implements Fightable01{
 
     @Override
     public void move(int x, int y) { //오버라이딩 규칙에 의해 public 강제.
-        System.out.println("좌표 : " + x + y + " 로 이동");
+        System.out.println("좌표 : " + x +", "+ y + " 로 이동");
     }
 
     @Override
@@ -31,6 +31,9 @@ class Fighter01 extends Unit02 implements Fightable01{
     public void attack(String s){
         System.out.println(s + "를 공격");
     }
+    public void attack(int i ,int j,String s){
+        System.out.println("좌표 " +i+ ", " +j+" 의 " + s + " 를 공격");
+    }
 }
 
 public class InterfaceAbstract01 {
@@ -39,5 +42,6 @@ public class InterfaceAbstract01 {
         f.move(200,20);
         f.attack(new Fighter01());
         f.attack("히드라");
+        f.attack(10,20,"마린");
     }
 }
