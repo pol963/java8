@@ -21,8 +21,8 @@ public class InnerClass04 {
         int lv = 0;
         final int LV = 0; //JDK 1.8 부터 final 생략 가능.
 
-        class LocalInner{ //지역 내부 클래스.
-            int liv01 = lv; // jdk 1.8 이후로 에러x -> final 이 생략되어도 값이 이후 바뀌지 않는다면 상수로 간주. 사용 가능
+        class LocalInner{ //지역 내부 클래스. -> 지역내부클래스를 감싸고있는 메서드는 상수만 접근 가능.
+            int liv01 = lv; // jdk 1.8 이후로 에러x -> final 이 생략되어도 값이 이후 바뀌지 않는다면 상수로 간주. 사용 가능 -> 이후 값이 바뀌면 에러.
             int liv02 = LV;
             int liv03 = outerIv01;
             int liv04 = outerCv01;
